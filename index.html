@@ -1,17 +1,90 @@
 <html>
-<title>Animation Test</title>
+<title>$/peter qirjazi/$</title>
+
 <style type="text/css">
-    
+
 body {
-    margin: 0;
+margin: 0;
+}
+
+#container {
+    height: 900px;
+    background-color: #666;
+    }
+#header {
+height: 75px;
+animation: pulse 3s infinite;
+}
+
+    #header h1 {
+        margin-left: 20px;
+    }
+#header h3 {
+margin-top: -20px;
+margin-left: 40px;
+    }
+    
+#header audio {
+    margin-top: -50px;
+    margin-left: 300px;
     }
 
-#background {
-    float: left;
-    width: 1400px;
-    height: 1400px;
-    border-radius: 0px;
-    animation: pulse 3s infinite ;
+#post_container {
+    background-color: #000000;
+    height: 175px;
+    margin-top: -20px;
+    }
+    #post_header {
+    background-color: #000000;
+    color: #FFFFFF;
+    text-align: center;
+    }
+    #post_pinned {
+    color: #FF0000;
+    margin-top: -20px;
+    background-color: #333;
+    }
+    #post_content {
+    color: #00FFFF;
+    }
+    #last_updated_post {
+    color: #FF0000;
+    background-color: #333;
+    height: 20px;
+    }
+       
+#separator_notpinned {
+    background-color: #000;
+    color: #FFF;
+    margin-top: -40px;
+    }
+    
+    #sources_separator {
+        background-color: #333;
+        height: 20px;
+        margin-top: -18px;
+        color: #FF0000
+    }
+#post-container-1 {
+        background-color: #000;
+        margin-top: -20px;
+    }
+    #post-container-1 h2 {
+        color: #FFFFFF;
+    }
+    #post-container-1 p {
+        color: #00FFFF;
+        margin-top: -20px;
+    }
+    #post-container-1 h4 {
+        color: #666666;
+        margin-top: -20px;
+    }
+        
+#seperator_casual_from_posts {
+    height: 20px;
+    background-color: #333333;
+    margin-top: -18px;
     }
     
 @keyframes pulse {
@@ -30,26 +103,46 @@ body {
 100% {
     background-color: #07F1E3;
     }
-    
-#image {
-    width: 600px;
-    height: 600px;
-    margin: 0 auto;
-    }
-#text {
-    width: 1400px;
-    height: 600px;
-    
+
 </style>
 
 <body>
-<div id="background">
-        <div id="text">
-            <center><h1>peter qirjazi</h1></center>
-            <center><h3>website design // computer science student</h3></center>
-            <center><audio src="xotourlife.mp3" controls></center>
-</audio>
+<div id="container">
+    <div id="header">
+        <h1>peter qirjazi.</h1>
+    <h3>computer science honors student<h3>
+        <center><audio src="xotourlife.mp3" controls></center></audio>
+        </div>
+<div id="post_container">
+    <div id="post_header">
+        <h3>Updates // 11.02.2018</h3>
     </div>
+    <div id="post_pinned">
+        <center><p>pinned to top.</p></center>
+    </div>
+    <div id="post_content">
+        <p>Welcome to the blog.</p>
+        
+        <p>Enjoy.</p>
+    </div>
+    <div id="last_updated_post">
+        <p>Last updated on 11.02.2018 // 3:58 P.M. // By Peter Qirjazi</p>
+    </div>
+        </div>
+        <div id="separator_notpinned">
+            <center><p>CASUAL POSTS</p></center>
+        </div>
+        <div id="seperator_casual_from_posts">
+        </div>
+        <div id="post-container-1">
+            <h2>First Post.</h2>
+            <h4>11.02.2018 // peter</h4>
+            <p>Mock post. This is the first post of the blog.</p>
+        </div>
+        <div id="sources_separator">
+            <p>Last updated on 11.02.2018 // 9:35 P.M. // By Peter Qirjazi</p>
+        </div>
+        </div>
 </div>
 </body>
 </html>
